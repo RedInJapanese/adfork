@@ -17,7 +17,7 @@
 ## Asset sources:
 - **logo.png:** Created by me using ms paint. It was not based on another work.
 - **ltext.png:** Created by me using ms paint. It was not based on another work.
-- **monke.jpg:** Was not created by me. This is a picture taken by Thomas Marent of a black and white snub nosed monkey.
+- **monke.jpg:** Was not created by me. This is a picture taken by ![Thomas Marent](https://www.smithsonianmag.com/smart-news/monkeys-like-full-red-lips-too-180957565/) of a black and white snub nosed monkey.
 
 Code sources:
 - `adventure.js` and `index.html` were created for this project [Adam Smith](https://github.com/rndmcnlly) and edited by me.
