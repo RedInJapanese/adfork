@@ -1,7 +1,7 @@
 # A simple adventure game by Akash Basu based on a simple adventure game engine by [Adam Smith](https://github.com/rndmcnlly).
 
 ## Code requirements:
-- **4+ scenes based on `AdventureScene`**: satisfied (name at least 4 of the classes). **This requirement is satisfied through the Map and Rooms 2,3,4, Door A, and Door B.**
+- **4+ scenes based on `AdventureScene`**: satisfied (name at least 4 of the classes). **This requirement is satisfied through the Map and Rooms 2,3,4,5, Door A, and Door B.**
 - **2+ scenes *not* based on `AdventureScene`**: satisfied (name the classes). **The Intro and Outro classes of the game are non adventure scenes.** 
 - **2+ methods or other enhancement added to the adventure game engine to simplify my scenes**:
     - Enhancement 1: **satisfied (Players can now access a map emoji at the bottom of the screen to look at a map and return to whatever room they were in. This allows players to navigate through rooms in an easier fashion)**
