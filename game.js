@@ -1,12 +1,12 @@
+let current_room = ""
 class Map extends AdventureScene {
     constructor() {
         super("map", "Map(Click to continue)");
     }
 
     onEnter() {
-
         let clip = this.add.text(this.w * 0.3, this.w * 0.3, "Room One\n   |\nRoom Two\n   |\nRoom Three\n   |\nRoom Four ---Door A\n   |       |\nRoom Five   -- Door B\n").setFontSize(this.s * 2)
-        this.input.on('pointerdown', () => this.scene.start('room1'));
+        this.input.on('pointerdown', () => this.scene.start(current_room));
     }
 }
 
@@ -17,7 +17,7 @@ class Room1 extends AdventureScene {
     }
 
     onEnter() {
-
+        current_room = "room1"
         let clip = this.add.text(this.w * 0.3, this.w * 0.3, "📎 paperclip")
             .setFontSize(this.s * 2)
             .setInteractive()
@@ -79,6 +79,7 @@ class Room2 extends AdventureScene {
         super("room2", "Second Room");
     }
     onEnter() {
+        current_room= "room2"
         let paper = this.add.text(this.w * 0.5, this.w * 0.1, "📝 piece of paper ")
             .setFontSize(this.s * 2)
             .setInteractive()
@@ -106,6 +107,7 @@ class Room3 extends AdventureScene {
         super("room3", "Third Room");
     }
     onEnter() {
+        current_room= "room3"
         let pressed = false
         let bbutton = this.add.text(this.w * 0.1, this.w * 0.1, "🅱️ B button")
             .setFontSize(this.s * 2)
@@ -157,6 +159,7 @@ class Room4 extends AdventureScene {
         super("room4", "Fourth Room");
     }
     onEnter() {
+        current_room= "room4"
         let doora = this.add.text(this.w * 0.1, this.w * 0.1, "🚪 door a")
             .setFontSize(this.s * 2)
             .setInteractive()
@@ -198,6 +201,7 @@ class DoorA extends AdventureScene {
         super("doora", "Door A");
     }
     onEnter() {
+        current_room= "doora"
         let doora = this.add.text(this.w * 0.1, this.w * 0.1, "🚪 Go Back?")
             .setFontSize(this.s * 2)
             .setInteractive()
@@ -233,6 +237,7 @@ class DoorB extends AdventureScene {
         super("doorb", "Door B");
     }
     onEnter() {
+        current_room= "doorb"
         let doorb = this.add.text(this.w * 0.1, this.w * 0.1, "🚪 Go Back?")
             .setFontSize(this.s * 2)
             .setInteractive()
@@ -252,6 +257,7 @@ class Room5 extends AdventureScene {
     }
 
     onEnter() {
+        current_room= "room5"
         let textObject = this.add.text(
             400, //x
             0,//y
@@ -290,6 +296,7 @@ class Intro extends Phaser.Scene {
         this.load.image('log', './assets/ltext.png');
     }
     create(){
+        current_room= "intro"
         this.add.image(910,500,'thing')
         this.add.image(900,680,'log')
 
@@ -318,7 +325,7 @@ class Intro extends Phaser.Scene {
             delay: 3000, 
             loop:false,
             callback: () => {
-                this.scene.start("map")
+                this.scene.start("room1")
             }
         })
     }
