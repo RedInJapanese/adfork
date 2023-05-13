@@ -9,7 +9,7 @@
 
 ## Experience requirements:
 - **4+ locations in the game world**: satisfied (name at least 4 of the classes): **Room1, Room2, Room3, Room4, DoorA, DoorB, Room5**
-- **2+ interactive objects in most scenes**: satisfied (describe two examples): **Button A(Has shaking animation), Passcode(Has fadeaway animation and gets stored into inventory)**
+- **2+ interactive objects in most scenes**: satisfied (describe two examples): **Room 3 has two buttons and Room 4 has two doors**
 - **Many objects have `pointerover` messages**: satisfied **Button A and Button B both have pointerover messages describing what they are**
 - **Many objects have `pointerdown` effects**: satisfied (describe two examples): **Button A has a pointer down effect in which text appears saying its the wrong button while shaking and Passcode has a pointer down effect in which there is a message saying you took it and it fades away**
 - **Some objects are themselves animated**: satisfied (describe two examples): **Button A has a shaking animation and the Passcode has a fade away animation**
