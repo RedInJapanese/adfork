@@ -1,5 +1,4 @@
 class AdventureScene extends Phaser.Scene {
-
     init(data) {
         this.inventory = data.inventory || [];
     }
@@ -48,6 +47,20 @@ class AdventureScene extends Phaser.Scene {
                     this.scale.startFullscreen();
                 }
             });
+            this.add.text(this.w-6*this.s, this.h-3*this.s, "🗺️")
+            .setStyle({ fontSize: `${2 * this.s}px` })
+            .setInteractive({useHandCursor: true})
+            .on('pointerover', () => this.showMessage('Map'))
+            .on('pointerdown', () => {
+                this.scene.start("map")
+            });   
+              this.add.text(this.w-9*this.s, this.h-3*this.s, "🔁")
+              .setStyle({ fontSize: `${2 * this.s}px` })
+              .setInteractive({useHandCursor: true})
+              .on('pointerover', () => this.showMessage('Restart'))
+              .on('pointerdown', () => {
+                  this.scene.start("room1")
+              }); 
 
         this.onEnter();
 
