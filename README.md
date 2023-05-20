@@ -1,4 +1,4 @@
-# A simple adventure game by Akash Basu based on a simple adventure game engine by [Adam Smith](https://github.com/rndmcnlly).
+# D3 Assignment
 
 ## Code requirements:
 - The game uses both continuous and discrete inputs from the player `(Level 1, 2, and 3)`
