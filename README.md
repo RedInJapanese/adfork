@@ -1,11 +1,11 @@
 # A simple adventure game by Akash Basu based on a simple adventure game engine by [Adam Smith](https://github.com/rndmcnlly).
 
 ## Code requirements:
-- **4+ scenes based on `AdventureScene`**: satisfied (name at least 4 of the classes). **This requirement is satisfied through the Map and Rooms 2,3,4,5, Door A, and Door B.**
-- **2+ scenes *not* based on `AdventureScene`**: satisfied (name the classes). **The Intro and Outro classes of the game are non adventure scenes.** 
-- **2+ methods or other enhancement added to the adventure game engine to simplify my scenes**:
-    - Enhancement 1: **satisfied (Players can now access a map emoji at the bottom of the screen to look at a map and return to whatever room they were in. This allows players to navigate through rooms in an easier fashion)**
-    - Enhancement 2: **satisfied (Players have a restart button at the bottom right which allows them to start the game again from room 1 which saves players the time of having to make it to the end screen in order to restart)**
+- The game uses both continuous and discrete inputs from the player
+- The player’s goal can only be achieved indirectly (by allowing the physics engine to move key objects into position/contact).
+- 3+ physics-based gameplay scenes (possibly implemented with a single Phaser Scene subclass).
+- Other scenes are used to separate and contextualize the gameplay scenes
+
 
 ## Experience requirements:
 - **4+ locations in the game world**: satisfied (name at least 4 of the classes): **Room1, Room2, Room3, Room4, DoorA, DoorB, Room5**
