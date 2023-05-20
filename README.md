@@ -1,5 +1,8 @@
 # D3 Assignment
 
+## Where to play
+redinjapanese.github.io/D3
+
 ## Code requirements:
 - The game uses both continuous and discrete inputs from the player `(Level 1, 2, and 3)`
 - The player’s goal can only be achieved indirectly `(Level 1, 2, and 3)`
